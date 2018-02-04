@@ -18,7 +18,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     public void cfpButtonPressed(View view) {
-        Intent cfp = new Intent(Intent.ACTION_VIEW, Uri.parse("https://cotap.org/reduce-carbon-footprint/"));
+        Intent cfp = new Intent(Intent.ACTION_VIEW, Uri.parse("http://shrinkthatfootprint.com/what-is-a-carbon-footprint"));
         startActivity(cfp);
     }
 

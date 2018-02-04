@@ -225,15 +225,19 @@
         android:id="@+id/answerButton"
         android:layout_width="366dp"
         android:layout_height="31dp"
-        android:background="?android:attr/windowBackground"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="455dp"
-        android:layout_marginBottom="21dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/foodTextBox"
+        android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/foodTextBox"
+        android:layout_marginBottom="21dp"
         android:layout_marginLeft="9dp"
-        android:layout_marginStart="9dp" />
+        android:layout_marginStart="9dp"
+        android:background="?android:attr/windowBackground"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="455dp" />
 
 
 </RelativeLayout>

@@ -21,10 +21,11 @@
         <activity android:name=".Rchange" />
         <activity android:name=".Cchange" />
         <activity android:name=".car" />
-        <activity android:name=".stove" />
+        <activity android:name=".AboutusActivity" />
         <activity android:name=".transportationRoutine" />
         <activity android:name=".travel" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SuggestionActivity"></activity>
     </application>
 
 </manifest>

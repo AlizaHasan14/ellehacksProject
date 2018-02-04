@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void suggestionButtonPressed(View view) {
         button = (Button) findViewById(R.id.suggestButton);
-        startActivity(new Intent(MainActivity.this, InfoActivity.class));
+        startActivity(new Intent(MainActivity.this, SuggestionActivity.class));
     }
 
     public void aboutusButtonPressed(View view) {
-        startActivity(new Intent(MainActivity.this, InfoActivity.class));
+        startActivity(new Intent(MainActivity.this, AboutusActivity.class));
     }
 }

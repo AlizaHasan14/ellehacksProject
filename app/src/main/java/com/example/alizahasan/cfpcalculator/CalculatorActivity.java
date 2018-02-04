@@ -45,6 +45,7 @@ public class CalculatorActivity extends AppCompatActivity {
 
         double answer = Energy.Footprint(elecEnergy, gasEnergy) + Transport.calculateCFP(planeEnergy, busEnergy, carEnergy) + Food.Footprint(foodEnergy);
         String ans = Double.toString(answer);
+        //startActivity(new Intent(this, SuggestionActivity.class));
         TextView tview = (TextView)findViewById(R.id.answerButton);
         tview.setText(ans);
     }
