@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alizahasan.cfpcalculator.MainActivity">
+
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="introButtonPressed"
+        android:text="Introduction To Carbon Footprint"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="46dp"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/profileButton"
+        android:layout_alignLeft="@+id/profileButton"
+        android:layout_alignStart="@+id/profileButton" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="profileButtonPressed"
+        android:text="Create your Profile"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_above="@+id/carbonButton"
+        android:layout_alignLeft="@+id/carbonButton"
+        android:layout_alignStart="@+id/carbonButton"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:id="@+id/carbonButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="carbonFpButtonPressed"
+        android:text="Calculate your Carbon Footprint"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="210dp"
+        android:layout_above="@+id/suggestButton"
+        android:layout_alignLeft="@+id/suggestButton"
+        android:layout_alignStart="@+id/suggestButton"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:id="@+id/suggestButton"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="suggestionButtonPressed"
+        android:text="Reduce Carbon Footprint"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="295dp"
+        android:layout_above="@+id/aboutus"
+        android:layout_alignLeft="@+id/aboutus"
+        android:layout_alignStart="@+id/aboutus"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:id="@+id/aboutus"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:onClick="aboutusButtonPressed"
+        android:text="About us"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="379dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.alizahasan.cfpcalculator.CalculatorActivity">
+
+    <EditText
+        android:id="@+id/electricityTextbox"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/gasTextBox"
+        android:layout_alignLeft="@+id/gasTextBox"
+        android:layout_alignStart="@+id/gasTextBox"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="363dp"
+        android:layout_height="45dp"
+        android:text="In order to calculate your carbon footprint for every 3 months, fill out all the neccessary details below."
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="Enter your comsumption of the each type of energy."
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="57dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp" />
+
+    <TextView
+        android:id="@+id/electricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/electricityTextbox"
+        android:layout_alignBottom="@+id/electricityTextbox"
+        android:text="Electricity (in kwh):"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_alignRight="@+id/cfpButton"
+        android:layout_alignEnd="@+id/cfpButton" />
+
+    <TextView
+        android:id="@+id/gas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural gas:"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="135dp"
+        android:layout_alignBaseline="@+id/gasTextBox"
+        android:layout_alignBottom="@+id/gasTextBox"
+        android:layout_alignLeft="@+id/answerButton"
+        android:layout_alignStart="@+id/answerButton"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+    <EditText
+        android:id="@+id/gasTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView9"
+        android:layout_alignLeft="@+id/airplaneTextBox"
+        android:layout_alignStart="@+id/airplaneTextBox"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/airplaneCheckBox"
+        android:layout_marginBottom="27dp"
+        android:text="Choose your transport and mention the distance covered in km."
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <CheckBox
+        android:id="@+id/airplaneCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Plane"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_above="@+id/busCheckBox"
+        android:layout_toLeftOf="@+id/airplaneTextBox"
+        android:layout_toStartOf="@+id/airplaneTextBox"
+        android:layout_marginBottom="9dp" />
+
+    <CheckBox
+        android:id="@+id/busCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="255dp"
+        android:layout_alignTop="@+id/busTextBox"
+        android:layout_alignLeft="@+id/airplaneCheckBox"
+        android:layout_alignStart="@+id/airplaneCheckBox" />
+
+    <CheckBox
+        android:id="@+id/carCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_below="@+id/busTextBox"
+        android:layout_alignRight="@+id/busCheckBox"
+        android:layout_alignEnd="@+id/busCheckBox" />
+
+    <EditText
+        android:id="@+id/airplaneTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/busTextBox"
+        android:layout_alignStart="@+id/busTextBox"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <EditText
+        android:id="@+id/busTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/carTextBox"
+        android:layout_alignLeft="@+id/carTextBox"
+        android:layout_alignStart="@+id/carTextBox"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <EditText
+        android:id="@+id/carTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/foodTextBox"
+        android:layout_toRightOf="@+id/foodTextBox"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the calories consumed in a day:"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="350dp"
+        android:layout_above="@+id/foodTextBox"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignStart="@+id/text" />
+
+    <EditText
+        android:id="@+id/foodTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cfpButton"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <Button
+        android:id="@+id/cfpButton"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:onClick="cfpButtonPressed"
+        android:text="Calculate"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="405dp"
+        android:layout_marginBottom="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/answerButton"
+        android:layout_width="366dp"
+        android:layout_height="31dp"
+        android:background="?android:attr/windowBackground"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="455dp"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/foodTextBox"
+        android:layout_alignStart="@+id/foodTextBox"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp" />
+
+
+</RelativeLayout>

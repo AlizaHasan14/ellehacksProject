@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alizahasan.cfpcalculator.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="487dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="11dp">
+
+        <TextView
+            android:id="@+id/Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:text="Carbon FootPrint"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:text="A carbon footprint is defined as:
+The total amount of greenhouse gases produced to directly and indirectly support human activities,usually expressed in equivalent tons of carbon dioxide (CO2).
+Your carbon footprint is the sum of all emissions of CO2 (carbon dioxide), which were induced by your activities in a given time frame"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <Button
+            android:id="@+id/cfp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cfpButtonPressed"
+            android:text="What is CFP?" />
+
+        <Button
+            android:id="@+id/cfpwhy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:cursorVisible="true"
+            android:linksClickable="true"
+            android:onClick="whyButtonPressed"
+            android:text="Why it Matters?"></Button>
+
+        <Button
+            android:id="@+id/videoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:clickable="true"
+            android:onClick="videoButtonPressed"
+            android:text="Watch a TED talk about CFP"></Button>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
